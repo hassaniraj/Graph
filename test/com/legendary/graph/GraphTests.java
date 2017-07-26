@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.legenday.graph.Graph;
+import com.legenday.graph.GraphNodes;
 
 /***
  * Performs the tests for the graph
@@ -15,11 +15,11 @@ public class GraphTests {
 	private static int[] RESULT_TEST_CASE2 = new int[] { 5, 5, 5, 5, 5 };
 	private static int[] RESULT_TEST_CASE3 = new int[] { 2, 1 };
 	private static int[] RESULT_TEST_CASE4 = new int[] { 1, 0 };
-	private static Graph g;
+	private static GraphNodes g;
 
 	@BeforeClass
 	public static void setUpBeforeClass() {
-		g = new Graph();
+		g = new GraphNodes();
 	}
 
 	@Test

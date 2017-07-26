@@ -4,7 +4,7 @@ package com.legenday.graph;
  * Creates a graph 
  *
  */
-public class Graph {
+public class GraphNodes {
 	
 	/**
 	 * Adds an edge in the graph
