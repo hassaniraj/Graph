@@ -7,7 +7,7 @@ import org.junit.Test;
 import com.legenday.graph.Graph;
 
 /***
- * Performs the test for the graph
+ * Performs the tests for the graph
  *
  */
 public class GraphTests {
