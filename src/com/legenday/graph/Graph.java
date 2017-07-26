@@ -24,19 +24,18 @@ public class Graph {
 	 */
 	public int[] findReach(int nodes, int[][] edges) {
 		int[][] adjacencyMatrix = setGraph(nodes, edges);
-		int[][] path = adjacencyMatrix;
 		for (int through = 0; through < nodes; through++) {
 			for (int i = 0; i < nodes; i++) {
 				for (int j = 0; j < nodes; j++) {
-					path[i][j] = ((path[i][j] != 0) || (path[i][through] != 0 && path[through][j] != 0)) ? 1 : 0;
+					adjacencyMatrix[i][j] = ((adjacencyMatrix[i][j] != 0) || (adjacencyMatrix[i][through] != 0 && adjacencyMatrix[through][j] != 0)) ? 1 : 0;
 				}
 			}
 		}
-		return getVerticeCount(path);
+		return getVerticeCount(adjacencyMatrix);
 	}
 	
 	/**
-	 * Get the count of the reach for each vertice
+	 * Gets the count of the reach for each vertice
 	 * @param reach
 	 * @return int[] vertex count with reachability
 	 */
